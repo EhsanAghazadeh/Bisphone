@@ -1,4 +1,12 @@
-[0m[[0m[31merror[0m] [0m[0m/home/ehsana1998/IdeaProjects/Test/src/main/scala/Main.scala:180:25: reassignment to val[0m
-[0m[[0m[31merror[0m] [0m[0m    numbers.map({i => i = readLine().toInt})[0m
-[0m[[0m[31merror[0m] [0m[0m                        ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ehsana1998/IdeaProjects/Test/src/main/scala/Main.scala:204:9: futures is already defined as variable futures[0m
+[0m[[0m[31merror[0m] [0m[0m    val futures: Array[Future[Int]] = {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ehsana1998/IdeaProjects/Test/src/main/scala/Main.scala:200:22: inferred type arguments [Int,Array] do not conform to method sequence's type parameter bounds [A,M[X] <: TraversableOnce[X]][0m
+[0m[[0m[31merror[0m] [0m[0m    val rsl = Future.sequence(futures).map { ls => ??? }[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ehsana1998/IdeaProjects/Test/src/main/scala/Main.scala:200:31: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Array[scala.concurrent.Future[Int]][0m
+[0m[[0m[31merror[0m] [0m[0m required: M[scala.concurrent.Future[A]][0m
+[0m[[0m[31merror[0m] [0m[0m    val rsl = Future.sequence(futures).map { ls => ??? }[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

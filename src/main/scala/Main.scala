@@ -156,6 +156,8 @@ import scala.concurrent.duration._
 import scala.concurrent.duration.Duration
 import scala.io.StdIn.readLine
 import scala.util.{Failure, Success}
+import scala.collection.mutable.ListBuffer
+
 
 
 object Result {
@@ -170,26 +172,51 @@ object SumOfArray {
 
     var numberOfThreads: Int = readLine().toInt
     var numberOfElements: Int = readLine().toInt
-    var numbers = new List[Int](numberOfElements)
-
+    var buffer = new Array[Int](numberOfElements)
 
 
     for (i <- 0 to numberOfElements - 1) {
 
-      numbers(i) = readLine().toInt
+      buffer(i) = readLine().toInt
     }
 
-    numbers.map({i => i = readLine().toInt})
+    //    buffer.map({i => println(i)})
 
-    println(f"The result is: ${sumIt(numbers, numberOfThreads)}%30d")
+    println(f"The result is: ${sumIt(buffer, numberOfThreads)}%30d")
   }
 
   def sumIt(numbers: Array[Int], numberOfThreads: Int): Int = {
 
+    var result: Int = 0
 
-//    var sumOfElements: Int = 0
-    val coefficient = (numbers.size / numberOfThreads)
-    val futures: Array[Future[Int]] = {
+
+    var futures = numbers.grouped(numbers.size / numberOfThreads).map { ls =>
+      Future {
+        var resultValue = 0
+        ls.map(i => resultValue += i)
+//        println(resultValue)
+        resultValue
+//        Await.result(ls, Duration.Inf)
+      }
+    }
+
+    val rsl = Future.sequence(futures).map { ls =>
+
+
+      ls.map(resultOfThread => result += resultOfThread)
+      result
+    }.onComplete({
+      case Success(value) => value
+      case  Failure(exception) => println("Bugggg")
+    })
+
+//    Await.result(futures, Duration.Inf)
+    Thread.sleep(1000)
+    result
+
+    //    var sumOfElements: Int = 0
+    /*val coefficient = (numbers.size / numberOfThreads)
+//    val futuressss: Array[Future[Int]] = {
 
       var result = new Array[Future[Int]](numberOfThreads)
 
@@ -219,6 +246,8 @@ object SumOfArray {
 
     Thread.sleep(1000)
     sum
+  }*/
+
   }
 
 }

@@ -1,11 +1,1 @@
-[0m[[0m[0minfo[0m] [0m[0mPackaging /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/hello-test-1_2.12-1.0.jar ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	SumOfArray$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/classes/SumOfArray$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Result.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/classes/Result.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	SumOfArray.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/classes/SumOfArray.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Result$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/classes/Result$.class[0m
-[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
+[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/hello-test-1_2.12-1.0.jar[0m
