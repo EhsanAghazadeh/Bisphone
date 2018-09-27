@@ -1,0 +1,55 @@
+[debug] :: resolving dependencies :: hello-test-1#hello-test-1$sources;1.0
+[debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool]
+[debug] 	validate = true
+[debug] 	refresh = false
+[debug] resolving dependencies for configuration 'compile'
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [compile]
+[debug] resolving dependencies for configuration 'runtime'
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [runtime]
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [compile]
+[debug] resolving dependencies for configuration 'test'
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [test]
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [runtime]
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [compile]
+[debug] resolving dependencies for configuration 'provided'
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [provided]
+[debug] resolving dependencies for configuration 'optional'
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [optional]
+[debug] resolving dependencies for configuration 'compile-internal'
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [compile-internal]
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [compile]
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [optional]
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [provided]
+[debug] resolving dependencies for configuration 'runtime-internal'
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [runtime-internal]
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [runtime]
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [compile]
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [optional]
+[debug] resolving dependencies for configuration 'test-internal'
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [test-internal]
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [test]
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [runtime]
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [compile]
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [optional]
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [provided]
+[debug] resolving dependencies for configuration 'plugin'
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [plugin]
+[debug] resolving dependencies for configuration 'pom'
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [pom]
+[debug] resolving dependencies for configuration 'scala-tool'
+[debug] == resolving dependencies for hello-test-1#hello-test-1$sources;1.0 [scala-tool]
+[debug] 	resolved ivy file produced in cache
+[debug] :: downloading artifacts ::
+[debug] :: resolution report :: resolve 232ms :: artifacts dl 3ms
+[debug] 	report for hello-test-1#hello-test-1$sources;1.0 compile produced in /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/resolution-cache/reports/hello-test-1-hello-test-1$sources-compile.xml
+[debug] 	report for hello-test-1#hello-test-1$sources;1.0 runtime produced in /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/resolution-cache/reports/hello-test-1-hello-test-1$sources-runtime.xml
+[debug] 	report for hello-test-1#hello-test-1$sources;1.0 test produced in /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/resolution-cache/reports/hello-test-1-hello-test-1$sources-test.xml
+[debug] 	report for hello-test-1#hello-test-1$sources;1.0 provided produced in /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/resolution-cache/reports/hello-test-1-hello-test-1$sources-provided.xml
+[debug] 	report for hello-test-1#hello-test-1$sources;1.0 optional produced in /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/resolution-cache/reports/hello-test-1-hello-test-1$sources-optional.xml
+[debug] 	report for hello-test-1#hello-test-1$sources;1.0 compile-internal produced in /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/resolution-cache/reports/hello-test-1-hello-test-1$sources-compile-internal.xml
+[debug] 	report for hello-test-1#hello-test-1$sources;1.0 runtime-internal produced in /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/resolution-cache/reports/hello-test-1-hello-test-1$sources-runtime-internal.xml
+[debug] 	report for hello-test-1#hello-test-1$sources;1.0 test-internal produced in /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/resolution-cache/reports/hello-test-1-hello-test-1$sources-test-internal.xml
+[debug] 	report for hello-test-1#hello-test-1$sources;1.0 plugin produced in /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/resolution-cache/reports/hello-test-1-hello-test-1$sources-plugin.xml
+[debug] 	report for hello-test-1#hello-test-1$sources;1.0 pom produced in /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/resolution-cache/reports/hello-test-1-hello-test-1$sources-pom.xml
+[debug] 	report for hello-test-1#hello-test-1$sources;1.0 scala-tool produced in /home/ehsana1998/IdeaProjects/Test/target/scala-2.12/resolution-cache/reports/hello-test-1-hello-test-1$sources-scala-tool.xml
+[debug] 	resolve done (232ms resolve - 3ms download)

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="hello-test-1"
+		module="hello-test-1_2.10"
+		revision="1.0"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20180925124625"/>
+	<dependencies>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.0" status="release" pubdate="20121220105916" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2518" time="0" location="/home/ehsana1998/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.0/scala-library-2.10.0.pom"/>
+				<caller organisation="hello-test-1" name="hello-test-1_2.10" conf="test, compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7114639" time="0" location="/home/ehsana1998/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.0/scala-library-2.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.10">
+			<revision name="2.5.16" error="Resolution failed several times for dependency: com.typesafe.akka#akka-actor_2.10;2.5.16 {compile=[default(compile)]}:: 
+	public: unable to get resource for com/typesafe/akka#akka-actor_2.10;2.5.16: res=https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.5.16/akka-actor_2.10-2.5.16.pom: java.net.UnknownHostException: repo1.maven.org: Name or service not known
+	Typesafe Repository: unable to get resource for com/typesafe/akka#akka-actor_2.10;2.5.16: res=http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-actor_2.10/2.5.16/akka-actor_2.10-2.5.16.pom: java.net.SocketTimeoutException: connect timed out
+" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="hello-test-1" name="hello-test-1_2.10" conf="test, compile, runtime" rev="2.5.16" rev-constraint-default="2.5.16" rev-constraint-dynamic="2.5.16" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
